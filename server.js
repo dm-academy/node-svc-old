@@ -24,8 +24,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-  res.send('Successful POST, received this value: ')
-  res.send(req.body.text);
+  res.send('Successful POST, received this value: ' + req.body)
 });
 
 
