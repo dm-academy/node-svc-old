@@ -20,10 +20,11 @@ app.post('/', (req, res) => {
 */
 
 app.get('/', (req, res) => {
-  res.send('Try POSTing to this URL. See readme in Github');
+  res.send('Successful request.');
 });
 
 app.post('/', (req, res) => {
+  res.send('Successful POST, received this value: ')
   res.send(req.body.text);
 });
 
