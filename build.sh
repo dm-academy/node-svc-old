@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t charlestbetz/node-microservice .
+docker build -t charlestbetz/node-svc .
