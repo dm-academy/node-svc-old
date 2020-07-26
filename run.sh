@@ -4,9 +4,10 @@ if [ -z "$NODESVC1" ]
 then
   echo "NODESVC1 is not set"
 else
-  unset NODESVC1
   echo "killing $NODESVC1"
   docker kill $NODESVC1
+  unset NODESVC1
+  
 fi
 
 docker run -d -p 8080:3000 charlestbetz/node-svc
